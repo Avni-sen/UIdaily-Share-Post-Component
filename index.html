@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>SHARE POST</title>
+</head>
+
+<body>
+
+    <label for="popup1" class="popup-toogle-btn">
+        <img src="./img/sare-icon.svg" alt="">
+        Share
+    </label>
+
+    <input class="popup-toogle" type="checkbox" id="popup1">
+
+    <div class="popup">
+        <div class="popup-inner share-popup">
+            <label for="popup1" class="popup-close">
+                <img src="./img/close-icon-dark.svg" alt="">
+            </label>
+            <h4>Share this design</h4>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/pinterest.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/twitter.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/instagram.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/tumblr.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/linkedin.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <h6>Or Copy Link</h6>
+            <div class="input">
+                <input type="text" readonly id="input-url" value="https://www.uidesigndaily.com/posts/5d6ab9ea91deae0012006d44">
+                <button type="button" onclick="copy('input-url')">Copy</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/app.min.js"></script>
+</body>
+
+</html>
