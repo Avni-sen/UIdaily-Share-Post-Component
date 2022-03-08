@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  padding: 50px;
+}
+
+.popup-toogle-btn {
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 14px;
+  border: 1px solid #EBEBF2;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.popup-toogle-btn img {
+  margin-right: 10px;
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 400ms all;
+  transition: 400ms all;
+}
+
+.popup .popup-close {
+  width: 39px;
+  height: 39px;
+  border-radius: 39px;
+  background: #f7f7fc;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  -webkit-transition: 500ms background ease-in;
+  transition: 500ms background ease-in;
+}
+
+.popup .popup-close:hover {
+  background: black;
+}
+
+.popup .popup-close img {
+  height: 15px;
+}
+
+.popup .popup-inner {
+  position: relative;
+  width: 808px;
+  padding: 55px 78px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.popup .popup-inner h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #242E4C;
+  margin-bottom: 40px;
+}
+
+.popup .popup-inner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.popup .popup-inner ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup .popup-inner ul li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 82px;
+  border: 1px solid #EBEBF2;
+  -webkit-transition: 300ms border-color ease-in-out;
+  transition: 300ms border-color ease-in-out;
+}
+
+.popup .popup-inner ul li a:hover {
+  border-color: #F775C1;
+}
+
+.popup .popup-inner ul li a img {
+  width: 35px;
+  height: 35px;
+}
+
+.popup .popup-inner h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #242E4C;
+  margin-bottom: 10px;
+}
+
+.popup .popup-inner .input {
+  position: relative;
+}
+
+.popup .popup-inner .input input {
+  height: 57px;
+  border: 1px solid #EBEBF2;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #242E4C;
+}
+
+.popup .popup-inner .input button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 57px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 57px;
+  background-color: transparent;
+  color: #F775C1;
+  border: 1px solid #EBEBF2;
+  border-left: none;
+  cursor: pointer;
+}
+
+.popup-toogle {
+  display: none;
+}
+
+.popup-toogle:checked + .popup {
+  opacity: 1;
+  visibility: visible;
+}
+
+.alert {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  padding: 5px 25px;
+  font-size: 14px;
+  border-radius: 25px;
+  background-color: #F775C1;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  z-index: 11;
+}
+
+.alert.success {
+  background-color: #F775C1;
+}
+
+.alert.error {
+  background-color: red;
+}
+
+.alert.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(-50%, -20px);
+          transform: translate(-50%, -20px);
+}
+/*# sourceMappingURL=main.css.map */
